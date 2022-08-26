@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+
+}
+
+.container{
+
+  display: flex;
+  width: 100vw;
+ height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F3B18C ;
+}
+
+.row{
+  display: flex;
+}
+.square{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 80px;
+ height: 80px;
+ background-color: white;
+ border: 10px solid #000000;
+ border-radius: 10px;
+ font-size: 64px;
+ font-family: 'Finger Paint';
+ font-weight: 400;
+ line-height: 94px;
+ margin-left: 10px;
+ margin-top: 10px;
+ cursor: pointer;
+ }
+ .gameOver{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background-color: #0005;
+  width: 100vw;
+  height: 100vh;
+  
+ }
+ .gameOver h1 {
+  position: absolute;
+  top:100px;
+  color:red;
+   border-radius: 10px;
+   text-align: center;
+   border: 10px solid black;
+   width: 30%;
+   background-color: bisque;
+   padding: 1rem;
+ }
+ .gameOver button {
+  position: absolute;
+  top:650px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 32px;
+   border-radius: 10px;
+   text-align: center;
+   border: 10px solid black;
+   color: red;
+   background-color: bisque;
+   padding: 1rem;
+ }
+ .win{
+  border: 10px solid purple;
+ }
+ .X{
+  color: red; 
+ }
+ .O{
+  color: blue;
+ }
