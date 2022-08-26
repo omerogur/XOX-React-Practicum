@@ -54,7 +54,7 @@ const Board = () => {
         let control = winnerLines[i]//kanazacak olan her arrayi geçici bir değişkene atıyoruz doldurduğumuz arrayda eşleşen array var mı diye kontrol ediyoruz.
         if (board[control[0]] === board[control[1]] && board[control[1]] === board[control[2]] && board[control[0]]) {
           let value = [control[0], control[1], control[2]] 
-          console.log("kazanan array indeksi", value); //eşleşen değer olursa geçici olarak value değişkenine atıyoruz ve statelerin içine yolluyoruz
+         //eşleşen değer olursa geçici olarak value değişkenine atıyoruz ve statelerin içine yolluyoruz
           setWinner(board[value[0]])
           setWincol(value)
       }

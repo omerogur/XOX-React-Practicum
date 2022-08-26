@@ -6,11 +6,10 @@ const Square = ({value,changeValue,index,wincol}) => {
         changeValue(index)
         
     }
-    const checkBoxWin = () => {
+    const checkBoxWin = () => { //KAZANN İNDEX SATILARINI BOYAMA
         for (let i = 0; i < 3; i++) {
           if (wincol[i] === index) {
             let still = "box win"
-            //console.log("12");
             return still
           }
         }
